@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links HTML</title>
+</head>
+<body>
+    <h1>Links HTML</h1>
+    <p>Links são encontrados em quase todas as páginas da web. Os links permitem que os usuários cliquem de uma página para outra.</p>
+    
+    <h2>Links HTML - Hiperlinks</h2>
+    <p>Links HTML são hiperlinks.</p>
+    <p>Você pode clicar em um link e ir para outro documento.</p>
+    <p>Quando você move o mouse sobre um link, a seta do mouse se transforma em uma pequena mão.</p>
+    <p>Nota: Um link não precisa ser texto. Um link pode ser uma imagem ou qualquer outro elemento HTML!</p>
+    
+    <h2>Links HTML - Sintaxe</h2>
+    <p>A tag HTML &lt;a&gt; define um hiperlink. Possui a seguinte sintaxe:</p>
+    <p>O atributo mais importante do &lt;a&gt; elemento é o href atributo, que indica o destino do link.</p>
+    <p>O texto do link é a parte que ficará visível ao leitor.</p>
+    <p>Clicar no texto do link enviará o leitor ao endereço URL especificado.</p>
+    <p>Exemplo:</p>
+    <code>&lt;a href="https://www.w3schools.com/"&gt;Visit W3Schools.com!&lt;/a&gt;</code>
+    
+    <h3>Links HTML - O atributo de destino</h3>
+    <p>Por padrão, a página vinculada será exibida na janela atual do navegador. Para alterar isso, você deve especificar outro destino para o link.</p>
+    <p>O target atributo especifica onde abrir o documento vinculado.</p>
+    <p>Exemplo:</p>
+    <code>&lt;a href="https://www.w3schools.com/" target="_blank"&gt;Visit W3Schools!&lt;/a&gt;</code>
+    
+    <h2>URLs absolutos versus URLs relativos</h2>
+    <p>Ambos os exemplos acima usam um URL absoluto (um endereço da web completo) no href atributo.</p>
+    <p>Um link local (um link para uma página dentro do mesmo site) é especificado com um URL relativo (sem a parte “https://www”):</p>
+    <p>Exemplo:</p>
+    <ul>
+        <li><h3>Absolute URLs</h3></li>
+        <li><a href="https://www.w3.org/">W3C</a></li>
+        <li><a href="https://www.google.com/">Google</a></li>
+        <li><h3>Relative URLs</h3></li>
+        <li><a href="html_images.asp">HTML Images</a></li>
+        <li><a href="/css/default.asp">CSS Tutorial</a></li>
+    </ul>
+    
+    <h2>Links HTML - Use uma imagem como link</h2>
+    <p>Para usar uma imagem como link, basta colocar a &lt;img&gt; tag dentro da &lt;a&gt; tag:</p>
+    <p>Exemplo:</p>
+    <code>&lt;a href="default.asp"&gt;<br>
+    &lt;img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"&gt;<br>
+    &lt;/a&gt;</code>
+    
+    <h2>Link para um endereço de e-mail</h2>
+    <p>Use mailto: dentro do href atributo para criar um link que abra o programa de e-mail do usuário (para permitir que ele envie um novo e-mail):</p>
+    <p>Exemplo:</p>
+    <code>&lt;a href="mailto:someone@example.com"&gt;Send email&lt;/a&gt;</code>
+    
+    <h2>Botão como um link</h2>
+    <p>Para usar um botão HTML como link, você deve adicionar algum código JavaScript.</p>
+    <p>JavaScript permite especificar o que acontece em determinados eventos, como o clique de um botão:</p>
+    <p>Exemplo:</p>
+    <code>&lt;button onclick="document.location='default.asp'"&gt;HTML Tutorial&lt;/button&gt;</code>
+    
+    <h2>Títulos de links</h2>
+    <p>O title atributo especifica informações extras sobre um elemento. As informações geralmente são mostradas como um texto de dica de ferramenta quando o mouse pass

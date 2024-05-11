@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento HTML Div</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            color: #333;
+        }
+        
+        h1 {
+            color: #555;
+        }
+        
+        h2 {
+            color: #777;
+        }
+        
+        p {
+            color: #999;
+        }
+        
+        code {
+            background-color: #f0f0f0;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        
+        .block-example {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .styled-div {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .red-text {
+            color: red;
+        }
+        
+        .blue-background {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Elemento HTML Div</h1>
+    
+    <h2>Elemento &lt;div&gt;</h2>
+    <p>O elemento &lt;div&gt; é usado como contêiner para outros elementos HTML. Por padrão, é um elemento de bloco, ocupando toda a largura disponível e gerando quebras de linha antes e depois.</p>
+    
+    <h2>Exemplo:</h2>
+    
+    <h3>Exemplo 1: Div ocupando toda a largura disponível</h3>
+    <p>Neste exemplo, um elemento &lt;div&gt; ocupa toda a largura disponível:</p>
+    <div class="block-example">
+        Lorem Ipsum
+        <div>I am a div</div>
+        dolor sit amet.
+    </div>
+    
+    <h3>Exemplo 2: &lt;div&gt; como um contêiner</h3>
+    <p>O elemento &lt;div&gt; é frequentemente usado para agrupar seções de uma página da web:</p>
+    <div class="block-example">
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+        <p>London has over 13 million inhabitants.</p>
+    </div>
+    
+    <h2>Alinhando ao centro um elemento &lt;div&gt;</h2>
+    <p>Se você tiver um elemento &lt;div&gt; que não ocupa 100% de largura e deseja alinhá-lo centralmente, você pode definir a propriedade CSS margin como auto:</p>
+    <style>
+        .centered-div {
+            width: 300px;
+            margin: auto;
+        }
+    </style>
+    <div class="block-example centered-div">
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+        <p>London has over 13 million inhabitants.</p>
+    </div>
+    
+    <h2>Vários elementos &lt;div&gt;</h2>
+    <p>Você pode ter muitos elementos &lt;div&gt; contêineres na mesma página:</p>
+    <div class="block-example">
+        <div>
+            <h2>London</h2>
+            <p>London is the capital city of England.</p>
+            <p>London has over 13 million inhabitants.</p>
+        </div>
+
+        <div>
+            <h2>Oslo</h2>
+            <p>Oslo is the capital city of Norway.</p>
+            <p>Oslo has over 600,000 inhabitants.</p>
+        </div>
+
+        <div>
+            <h2>Rome</h2>
+            <p>Rome is the capital city of Italy.</p>
+            <p>Rome has almost 3 million inhabitants.</p>
+        </div>
+    </div>
+    
+    <h2>Alinhando elementos &lt;div&gt; lado a lado</h2>
+    <p>Ao construir páginas da web, muitas vezes você deseja ter dois ou mais elementos &lt;div&gt; lado a lado. Existem diferentes métodos para fazer isso, incluindo flutuadores, blocos embutidos, flexbox e grade CSS.</p>
+    
+    <h3>Flutuador</h3>
+    <p>Usa a propriedade CSS float para alinhar elementos &lt;div&gt; lado a lado:</p>
+    <style>
+        .float-example {
+            overflow: auto;
+        }
+        .float-example div {
+            width: 33.33%;
+            float: left;
+        }
+    </style>
+    <div class="block-example float-example">
+        <div>
+            <h2>London</h2>
+            <p>London is the capital city of England.</p>
+            <p>London has over 13 million inhabitants.</p>
+        </div>
+        <div>
+            <h2>Oslo</h2>
+            <p>Oslo is the capital city of Norway.</p>
+            <p>Oslo has over 600,000 inhabitants.</p>
+        </div>
+        <div>
+            <h2>Rome</h2>
+            <p>Rome is the capital city of Italy.</p>
+            <p>Rome has almost 3 million inhabitants.</p>
+        </div>
+    </div>
+    
+    <h3>Bloco embutido</h3>
+    <p>Usa a propriedade CSS display: inline-block para alinhar elementos &lt;div&gt; lado a lado:</p>
+    <style>
+        .inline-block-example div {
+            width: 30%;
+            display: inline-block;
+        }
+    </style>
+    <div class="block-example inline-block-example">
+        <div>
+            <h2>London</h2>
+            <p>London is the capital city of England.</p>
+            <p>London has over 13 million inhabitants.</p>
+        </div>
+        <div>
+            <h2>Oslo</h2>
+            <p>Oslo is the capital city of Norway.</p>
+            <p>Oslo has over 600,000 inhabitants.</p>
+        </div>
+        <div>
+            <h2>Rome</h2>
+            <p>Rome is the capital city of Italy.</p>
+            <p>Rome has almost 3 million inhabitants.</p>
+        </div>
+    </div>
+    
+    <h3>Flexível</h3>
+    <p>Usa o CSS Flexbox Layout Module para alinhar elementos &lt;div&gt; lado a lado:</p>
+    <style>
+        .flex-example {
+            display: flex;
+        }
+        .flex-example div {
+            width: 33.33%;
+        }
+    </style>
+    <div class="block-example flex-example">
+        <div>
+            <h2>London</h2>
+            <p>London is the capital city of England.</p>
+            <p>London has over 13 million inhabitants.</p>
+        </div>
+        <div>
+            <h2>Oslo</h2>
+            <p>Oslo is the capital city of Norway.</p>
+            <p>Oslo has over 600,000 inhabitants.</p>
+        </div>
+        <div>
+            <h2>Rome</h2>
+            <p>Rome is the capital city of Italy.</p>
+            <p>Rome has almost 3 million inhabitants.</p>
+        </div>
+    </div>
+    
+    <h3>Grade</h3>
+    <p>Usa o CSS Grid Layout Module para alinhar elementos &lt;div&gt; lado a lado:</p>
+    <style>
+        .grid-example {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+        }
+    </style>
+    <div class="block-example grid-example">
+        <div>
+            <h2>London</h2>
+            <p>London is the capital city of England.</p>
+            <p>London has over 13 million inhabitants.</p>
+        </div>
+        <div>
+            <h2>Oslo</h2>
+            <p>Oslo is the capital city of Norway.</p>
+            <p>Oslo has over 600,000 inhabitants.</p>
+        </div>
+        <div>
+            <h2>Rome</h2>
+            <p>Rome is the capital city of Italy.</p>
+            <p>Rome has almost 3 million inhabitants.</p>
+        </div>
+    </div>
+    
+</html>

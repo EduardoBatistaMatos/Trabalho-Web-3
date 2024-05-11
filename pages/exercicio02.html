@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos HTML</title>
+</head>
+<body>
+
+    <h1>Elementos HTML</h1>
+    <p>Um elemento HTML é definido por uma tag inicial, algum conteúdo e uma tag final.</p>
+    <h2>Exemplos de alguns elementos HTML:</h2>
+    <pre>
+        <code>
+            &lt;h1&gt;Meu primeiro título&lt;/h1&gt;
+            &lt;p&gt;Meu primeiro parágrafo.&lt;/p&gt;
+            &lt;br&gt;
+        </code>
+    </pre>
+    <table>
+        <tr>
+            <th>Start tag</th>
+            <th>Element content</th>
+            <th>End tag</th>
+        </tr>
+        <tr>
+            <td>&lt;h1&gt;</td>
+            <td>My First Heading</td>
+            <td>&lt;/h1&gt;</td>
+        </tr>
+        <tr>
+            <td>&lt;p&gt;</td>
+            <td>My first paragraph.</td>
+            <td>&lt;/p&gt;</td>
+        </tr>
+        <tr>
+            <td>&lt;br&gt;</td>
+            <td>none</td>
+            <td>none</td>
+        </tr>
+    </table>
+
+    <h2>Elementos HTML aninhados</h2>
+    <p>Os elementos HTML podem ser aninhados (isso significa que os elementos podem conter outros elementos).</p>
+    <p>Todos os documentos HTML consistem em elementos HTML aninhados.</p>
+    <h3>Exemplo:</h3>
+    <pre>
+        <code>
+            &lt;html&gt;
+            &lt;body&gt;
+            
+            &lt;h1&gt;My First Heading&lt;/h1&gt;
+            &lt;p&gt;My first paragraph.&lt;/p&gt;
+            
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code>
+    </pre>
+    <h3>Exemplo explicado:</h3>
+    <p>O <code>&lt;html&gt;</code> elemento é o elemento raiz e define todo o documento HTML.</p>
+    <p>Possui uma tag inicial <code>&lt;html&gt;</code> e uma tag final <code>&lt;/html&gt;</code>.</p>
+    <p>Então, dentro do <code>&lt;html&gt;</code> elemento existe um <code>&lt;body&gt;</code> elemento:</p>
+    <pre>
+        <code>
+            &lt;body&gt;
+            
+            &lt;h1&gt;My First Heading&lt;/h1&gt;
+            &lt;p&gt;My first paragraph.&lt;/p&gt;
+            
+            &lt;/body&gt;
+        </code>
+    </pre>
+    <p>O <code>&lt;body&gt;</code> elemento define o corpo do documento.</p>
+    <p>Possui uma tag inicial <code>&lt;body&gt;</code> e uma tag final <code>&lt;/body&gt;</code>.</p>
+    <p>Então, dentro do <code>&lt;body&gt;</code> elemento existem outros dois elementos: <code>&lt;h1&gt;</code> e <code>&lt;p&gt;</code>:</p>
+    <pre>
+        <code>
+            &lt;h1&gt;My First Heading&lt;/h1&gt;
+            &lt;p&gt;My first paragraph.&lt;/p&gt;
+        </code>
+    </pre>
+    <p>O <code>&lt;h1&gt;</code> elemento define um título.</p>
+    <p>Possui uma tag inicial <code>&lt;h1&gt;</code> e uma tag final <code>&lt;/h1&gt;</code>.</p>
+    <p>O <code>&lt;p&gt;</code> elemento define um parágrafo.</p>
+    <p>Possui uma tag inicial <code>&lt;p&gt;</code> e uma tag final <code>&lt;/p&gt;</code>.</p>
+
+    <h2>Nunca pule a tag final</h2>
+    <p>Alguns elementos HTML serão exibidos corretamente, mesmo se você esquecer a tag final:</p>
+    <pre>
+        <code>
+            &lt;html&gt;
+            &lt;body&gt;
+            
+            &lt;p&gt;This is a paragraph
+            &lt;p&gt;This is a paragraph
+            
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code>
+    </pre>
+    <p>No entanto, nunca confie nisso! Resultados inesperados e erros podem ocorrer se você esquecer a tag final!</p>
+
+    <h2>Elementos HTML vazios</h2>
+    <p>Elementos HTML sem conteúdo são chamados de elementos vazios.</p>
+    <p>A <code>&lt;br&gt;</code> tag define uma quebra de linha e é um elemento vazio sem tag de fechamento:</p>
+    <pre>
+        <code>
+            &lt;p&gt;This is a &lt;br&gt; paragraph with a line break.&lt;/p&gt;
+        </code>
+    </pre>
+
+    <h2>HTML não diferencia maiúsculas de minúsculas</h2>
+    <p>As tags HTML não diferenciam maiúsculas de minúsculas: <code>&lt;P&gt;</code> significa o mesmo que <code>&lt;p&gt;</code>.</p>
+    <p>O padrão HTML não exige tags em minúsculas, mas o W3C recomenda letras minúsculas em HTML e exige letras minúsculas para tipos de documentos mais rígidos, como XHTML.</p>
+    <p>Na W3Schools sempre usamos nomes de tags em letras minúsculas.</p>
+
+    <h2>Exercícios HTML</h2>
+    <p>Teste-se com exercícios</p>
+    <p>Exercício:</p>
+    <p>Insira a tag final correta para o título HTML.</p>
+    <pre>
+        <code>
+            &lt;h1&gt;Este é um título&lt;/h1&gt;
+        </code>
+    </pre>
+</body>
+</html>
